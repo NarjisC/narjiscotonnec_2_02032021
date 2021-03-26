@@ -1,0 +1,147 @@
+@font-face {
+    font-family: 'ralewayregular';
+    src: url('/font/raleway-regular-webfont.woff2') format('woff2'),
+         url('font/raleway-regular-webfont.woff') format('woff');
+         font-weight: normal;
+        font-style: normal;
+}
+
+body {
+        font-family: 'ralewayregular';
+        font-size: 15px;
+        margin: 0px;
+        padding-top: 5px;
+        background: #ffffff;
+        overflow: auto;
+    }
+
+p {
+    color: #000000;
+    font-family: 'ralewayregular';
+    font-size:15px;
+
+}
+header #logo {
+    padding-top: 5px;
+}
+
+header nav.menu-nav {
+    text-align: end;
+}
+    
+header nav.menu-nav li.bouton {
+    display: inline-block;
+    min-width: 20px;
+    list-style-type: none;
+}
+
+header nav.menu-nav li.bouton a {
+    text-decoration: none;
+    padding: 0 10px;
+    text-align: center;
+    font-size: 15px;
+    color: black;
+}
+
+header nav.menu-nav li.bouton:hover a {
+    color: #0065fc;
+    text-decoration-line: overline;
+    line-height: 2px; 
+  }
+
+header .bleu {
+    color: #0065fc
+    font-weight: bold;
+}
+
+section1 form.search-box button.location {
+    float: left;
+    background-color: #f2f2f2;
+    color: #000000;
+    border-radius: 5px 0px 0px 5px;
+    cursor: pointer;
+    position: static;
+    border: none;
+    padding: 0 10px;
+    width: 50px;
+    height: 19px
+}
+
+section1 form.search-box input {
+    float: left;
+    position: static;
+    border-top: 1px solid #f2f2f2;
+    border-bottom: 1px solid #f2f2f2;
+    border-left: 0;
+    border-right: 0;
+    outline: none;
+    width: 150px;
+    height: 18px;
+    padding: 0 10px;
+}
+
+section1 form.search-box input.search-txt {
+    font-family: 'ralewayregular';
+    font-weight: bold;
+    color: #000000;
+    opacity: 1.0;
+}
+
+section1 form.search-box button { 
+    background-color: #0065fc;
+    color: #ffffff;
+    border-radius: 0px 5px 5px 0px;
+    cursor: pointer;
+    position: static;
+    border: none;
+    padding: 0 10px;
+    width: 150px;
+    height: 19px;
+    font-family: 'ralewayregular';
+}
+
+section1 li.btn {
+    display: inline-block;
+    min-width: 20px;
+    list-style-type: none;
+    text-decoration: none;
+    line-height: 70px;
+    padding: 0 10px;
+    text-align: center;
+    font-size: 1.2em;
+    color: black;
+}
+
+section1 span.icon {
+        width: 20px;
+        clip-path:ellipse(50% 50%);
+        background-color: #f2f2f2;
+        color: #0065fc;
+        padding: 0px;
+}
+
+section1 button.filtres {
+    background-color: #ffffff;
+    color: #000000;
+    font-family: 'ralewayregular';
+    font-weight: bold;
+    border-radius: 5px 5px 5px 5px;
+    cursor: pointer;
+    position: static;
+    border: 1px solid #f2f2f2;
+    padding: 0 10px;
+    padding-left: 2px;
+    width: 150px;
+    height: 20px;
+
+} 
+}
+footer {
+    background-color: #f2f2f2;
+}
+
+   
+
+  
+
+
