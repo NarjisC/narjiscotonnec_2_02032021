@@ -1,30 +1,35 @@
 @font-face {
-    font-family: 'ralewayregular';
-    src: url('/font/raleway-regular-webfont.woff2') format('woff2'),
+    font-family:'ralewayregular';
+    src: url('font/raleway-regular-webfont.woff2') format ('woff2'),
          url('font/raleway-regular-webfont.woff') format('woff');
-         font-weight: normal;
+        font-weight: normal;
         font-style: normal;
 }
 
 body {
+        width: 100%;
         font-family: 'ralewayregular';
         font-size: 15px;
         margin: 0px;
         padding-top: 5px;
         background: #ffffff;
         overflow: auto;
-    }
+}
 
+h1 h2 h3 {
+    font-family: 'ralewayregular';
+}
 p {
     color: #000000;
     font-family: 'ralewayregular';
     font-size:15px;
-
 }
+
 header #logo {
     padding-top: 5px;
 }
 
+/* Menu à aligner en haut*/
 header nav.menu-nav {
     text-align: end;
 }
@@ -33,6 +38,7 @@ header nav.menu-nav li.bouton {
     display: inline-block;
     min-width: 20px;
     list-style-type: none;
+    margin-top: 5px;
 }
 
 header nav.menu-nav li.bouton a {
@@ -43,12 +49,14 @@ header nav.menu-nav li.bouton a {
     color: black;
 }
 
+/* Monter et agrandir la ligne */
 header nav.menu-nav li.bouton:hover a {
     color: #0065fc;
     text-decoration-line: overline;
-    line-height: 2px; 
-  }
+    line-height: 1px; 
+}
 
+/* S'inscrire à part/couleur bleue */
 header .bleu {
     color: #0065fc
     font-weight: bold;
@@ -135,11 +143,23 @@ section1 button.filtres {
     height: 20px;
 
 } 
-}
+
 footer {
     background-color: #f2f2f2;
+    display: inline-flex;
 }
 
+footer a.lien {
+    text-decoration: none;
+    padding: 0 10px;
+    text-align: center;
+    font-size: 15px;
+    color: #000000;
+}
+
+footer a.lien:hover a {
+    color: #deebff;
+}
    
 
   
