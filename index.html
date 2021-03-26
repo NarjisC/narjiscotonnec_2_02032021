@@ -2,7 +2,8 @@
     <html lang="fr-FR">
         <head>
             <meta charset="utf-8"/>
-            <link rel="stylesheet" href="style.css"> 
+            <link rel="stylesheet" href="css/style.css"> 
+            <link rel="stylesheet" href="css/flexbox.css">
             <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
             <title>Reservia</title>
         </head>
@@ -52,99 +53,108 @@
         </p>
     </section1>
 
-    <section2>
+    <section2 class="hbt">
         <h2 id="Hébergements">Hébergements à Marseille</h2>  
                
-        <img src="images/hebergements/1_xlarge/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="Chambre avec deux lits superposés et miroir vue sur la rue"/>
-            <p><strong>Auberge la Cannebière</strong><br>
+        <p>
+        <img src="images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg/" alt="Chambre avec deux lits superposés et miroir vue sur la rue" class="image"/>
+            <strong>Auberge la Cannebière</strong><br>
             Nuit à partir de <b>25€</b><br>
             <!--4 étoiles css--></p>
 
-        <img src="images/hebergements/1_xlarge/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="Chambre au thème gris et blanc avec une fenêtre et deux lits simples "/>
-            <p><strong>Hôtel du Port</strong><br>
+        <p>
+        <img src="images/hebergements/3_medium/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="Chambre au thème gris et blanc avec une fenêtre et deux lits simples " class="image"/>
+            <strong>Hôtel du Port</strong><br>
             Nuit à partir de <b>52€</b><br>
             <!--5 étoiles css--></p>
 
-         <img src="images/hebergements/1_xlarge/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="Chambre au thème beige, moderne avec dressing et lit double"/>
-            <p><strong>Hôtel des Mouettes</strong><br>
+        <p>
+         <img src="images/hebergements/3_medium/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="Chambre au thème beige, moderne avec dressing et lit double" class="image"/>
+            <strong>Hôtel des Mouettes</strong><br>
             Nuit à partir de <b>76€</b><br>
             <!--4 étoiles css--></p>
 
-         <img src="images/hebergements/1_xlarge/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="Chambre au thème bleu et blanc avec un lit double et cadre océan"/>
-            <p><strong>Hôtel de la Mer</strong><br>
+        <p>
+         <img src="images/hebergements/3_medium/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="Chambre au thème bleu et blanc avec un lit double et cadre océan" class="image"/>
+            <strong>Hôtel de la Mer</strong><br>
             Nuit à partir de <b>46€</b><br>
             <!--3 étoiles css--></p>
-
-        <img src="images/hebergements/1_xlarge/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="Chambre au thème chalet avec deux lits superposés et rideaux"/>
-            <p><strong>Auberge le Panier</strong><br>
+        
+        <p>
+        <img src="images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="Chambre au thème chalet avec deux lits superposés et rideaux" class="image"/>
+            <strong>Auberge le Panier</strong><br>
             Nuit à partir de <b>23€</b><br>
             <!--4 étoiles css--></p>
 
-        <img src="images/hebergements/1_xlarge/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt="Chambre au thème blanc avec deux lits simples, avec bureau et télévision"/>
-            <p><strong>Hôtel chez Amina</strong><br>
+        <p>
+        <img src="images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt="Chambre au thème blanc avec deux lits simples, avec bureau et télévision" class="image"/>
+            <strong>Hôtel chez Amina</strong><br>
             Nuit à partir de <b>96€</b><br>
             <!--5 étoiles css--></p>
+
+            <p><a href="#"></a>Afficher plus</a></p>
     </section2>
 
-  <!--Section 4 A Droite 1/3/Fond Gris-->
-        <h2>Les plus populaires</h2> <!--Icône stat-->
+    <section3 class="pop">
+        <h2>Les plus populaires</h2> 
+        <i class="fa fa-line-chart"></i>
+
         
-    <img src="images/hebergements/1_xlarge/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="Chambre au thème vert, baroque, avec un lit double, miroirs, porte-fenêtre avec balcon"/>
-        <p><strong>Hôtel le Soleil du Matin</strong><br>
-        Nuit à partir de <b>128€</b><br>
+        <p><img src="images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="Chambre au thème vert, baroque, avec un lit double, miroirs, porte-fenêtre avec balcon" class="image"/>
+            <strong>Hôtel le Soleil du Matin</strong><br>
+            Nuit à partir de <b>128€</b><br>
 
-        <!--5 étoiles css--></p>
+            <!--5 étoiles css--></p>
 
-    <img src="images/hebergements/1_xlarge/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="Chambre à l'étage au thème gris et industriel, avec lit double, un banc et une fenêtre"/>
-        <p><strong>Au Cœur de l'Eau</strong><br>
-        <strong>Chambres d'hôtes</strong><br>
-        Nuit à partir de <b>71€</b><br>
+        <p><img src="images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="Chambre à l'étage au thème gris et industriel, avec lit double, un banc et une fenêtre" class="image"/>
+            <strong>Au Cœur de l'Eau</strong><br>
+            <strong>Chambres d'hôtes</strong><br>
+            Nuit à partir de <b>71€</b><br>
 
-        <!--4 étoiles css--></p>
+            <!--4 étoiles css--></p>
 
-    <img src="images/hebergements/1_xlarge/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="Chambre au thème blanc avec une tête de lit en bois, deux tables de chevet et un lit double"/>
-        <p><strong>Hôtel Tout Bleu et Blanc</strong><br>
-        Nuit à partir de <b>68€</b><br>
+        <p><img src="images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="Chambre au thème blanc avec une tête de lit en bois, deux tables de chevet et un lit double" class="image"/>
+            <strong>Hôtel Tout Bleu et Blanc</strong><br>
+            Nuit à partir de <b>68€</b><br>
 
-        <!--4 étoiles css--></p>
- 
-<!--Section 5 Largeur-->    
+            <!--4 étoiles css--></p>
+    </section3>    
+
+    <section4 class="act">
         <h2 id="Activités">Activités à Marseille</h2>
 
-        <img src="images/activites/1_xlarge/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="Port de plaisance, bateaux à moteurs et à voile, Canebière"/>
-            <p>Vieux Port</p>
+            <p><img src="images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="Port de plaisance, bateaux à moteurs et à voile, Canebière" class="image"/>
+            Vieux Port</p>
 
-        <img src="images/activites/1_xlarge/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="Vue sur le fort et colline rocheuse, ciel nuageux"/>
-            <p>Fort de Pomègues</p>
+            <p><img src="images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="Vue sur le fort et colline rocheuse, ciel nuageux" class="image"/>
+            Fort de Pomègues</p>
 
-        <img src="images/activites/1_xlarge/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="Téléscope avec panorama sur l'archipel du Frioul et mer méditerannée, ciel bleu"/>
-            <p>Îles du Frioul</p>
+            <p><img src="images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="Téléscope avec panorama sur l'archipel du Frioul et mer méditerannée, ciel bleu" class="image"/>
+            Îles du Frioul</p>
 
-        <img src="images/activites/1_xlarge/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="Littoral de falaises calcaires, arbustes et criques entre mer et ciel"/>
-            <p>Parc national des Calanques</p>
+            <p><img src="images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="Littoral de falaises calcaires, arbustes et criques entre mer et ciel" class="image"/>
+            Parc national des Calanques</p>
 
-        <img src="images/activites/1_xlarge/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="Basilique dominant la ville de Marseille, ciel bleu"/>
-            <p>Notre-Dame-de-la-Garde</p>
+            <p><img src="images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="Basilique dominant la ville de Marseille, ciel bleu" class="image"/>
+            Notre-Dame-de-la-Garde</p>
 
-        <img src="images/activites/1_xlarge/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="Vue panoramique du palais Longchamp avec jardin et bassin"/>
-            <p>Parc Longchamp</p>
+            <p><img src="images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="Vue panoramique du palais Longchamp avec jardin et bassin" class="image"/>
+            Parc Longchamp</p>
+    </section4>
 
-            <p>Afficher plus</p>
-
-<!--Section 6 Largeur/Fond Gris-->
     <footer>
-            <h3>À propos</h3>
-                <p>Fonctionnement du site</p>
-                <p>Conditions générales de vente</p>
-                <p>Données et confidentialités</p>
+            <h3>À propos</h3><br>
+                <p><a href="#" class="lien">Fonctionnement du site </a><br>
+                <a href="#" class="lien">Conditions générales de vente</a><br>
+                <a href="#" class="lien">Données et confidentialités</a></p>
 
-            <h3>Nos hébergements</h3>
-                <p>Charte qualité</p>
-                <p>Soumettre votre hôtel</p>
+            <h3>Nos hébergements</h3><br>
+                <p><a href="#" class="lien">Charte qualité</a><br>
+                <a href="#" class="lien">Soumettre votre hôtel</a></p>
 
-            <h3>Assistance</h3>
-                <p>Centre d'aide</p>
-                <p>Nous contacter</p>
+            <h3>Assistance</h3><br>
+                <p><a href="#" class="lien">Centre d'aide</a><br>
+                <a href="#" class="lien">Nous contacter</a></p>
     </footer>    
         </body>
 

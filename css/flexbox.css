@@ -4,7 +4,7 @@ section2 section3 {
     flex-wrap: wrap;
 }
     
-    section2.hbt {
+section2.hbt {
     order: 1;
     width: 75%;
     background-color: #f2f2f2;
