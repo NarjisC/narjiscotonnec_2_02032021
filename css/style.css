@@ -1,27 +1,46 @@
 @font-face {
-    font-family:'ralewayregular';
-    src: url('font/raleway-regular-webfont.woff2') format ('woff2'),
-         url('font/raleway-regular-webfont.woff') format('woff');
+    font-family: "ralewayregular";
+    src: url("../font/raleway-regular-webfont.woff2") format("woff2"),
+        url("../font/raleway-regular-webfont.woff") format("woff"),
+        url('../font/Raleway-Regular.ttf') format('truetype');
         font-weight: normal;
         font-style: normal;
 }
 
+@font-face {
+    font-family: 'ralewaysemibold';
+    src: url('../font/raleway-semibold-webfont.woff2') format('woff2'),
+         url('../font/raleway-semibold-webfont.woff') format('woff'),
+         url('../font/Raleway-SemiBold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'ralewaylight';
+    src: url('../font/raleway-light-webfont.woff2') format('woff2'),
+         url('../font/raleway-light-webfont.woff') format('woff'),
+         url('../font/Raleway-Light.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 body {
         width: 100%;
-        font-family: 'ralewayregular';
+        font-family: 'ralewaylight';
         font-size: 15px;
-        margin: 0px;
+        margin: 1%;
         background: #ffffff;
         overflow: auto;
 }
 
 h1 h2 h3 h4 {
-    font-family: 'ralewayregular';
+    font-family: 'ralewaysemibold';
 }
 
 p {
     color: #000000;
-    font-family: 'ralewayregular';
+    font-family: 'ralewaylight';
     font-size:15px;
 }
 
@@ -29,94 +48,121 @@ header {
     background-color: #ffffff;
     width: 100%;
     display: grid;
-    grid-template-columns: 1fr auto 4fr;
-    grid-template-rows: 1fr;
+    grid-template-columns: 1fr auto 3fr;
     grid-template-areas: "logo . nav";
+    font-size: 15px;
 }
 
 header #logo {
-    padding-top: 10px;
     grid-area: logo;
 }
 
 header nav.menu-nav {
+    font-family: 'ralewaylight';
     text-align: end;
     grid-area: nav;
-    padding-top: 10px;
 }
-    
+
+header nav.menu-nav ul {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
 header nav.menu-nav li.bouton {
-    display: inline-block;
-    min-width: 20px;
+    height: 100%;
+    display: inline-flex;
+    column-gap: 30px; 
+    justify-content: flex-end;
+    align-items: center;
+    min-width: 10%;
     list-style-type: none;
-    margin-top: 20px;
 }
 
 header nav.menu-nav li.bouton a {
     text-decoration: none;
-    padding: 0 10px;
     text-align: center;
-    font-size: 15px;
     color: black;
 }
 
-/* Monter et agrandir la ligne */
 header nav.menu-nav li.bouton:hover a {
-    text-decoration-line: overline;
+    border-top: 1px solid #0065fc;
+    padding-top: 20px;
+    padding-bottom: 20px;
     color: #0065fc;
-    margin-top: 30px;
-}
+} 
+  
 
 header nav.menu-nav li.blue  {
-    font-weight: bold;
-    display: inline-block;
+    font-family: 'ralewaysemibold';
+    display: inline-flex;
     min-width: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
     list-style-type: none;
-    margin-top: 5px;
 }
 
 header nav.menu-nav li.blue a{
     text-decoration: none;
-    padding: 0 10px;
     text-align: center;
-    font-size: 15px;
     color: #0065fc;
 }
 
-
-section1 h1 {
-    font-weight: bold;
+section1 {
+    height: 100%;
     margin: 0;
+    font-size: 15px;
+}
+section1 h1 {
+    font-family : "ralewaysemibold";
+    font-size: 25px;
+    font-weight: bolder;
+    padding-bottom: 0%;
+    padding-top: 20px;
+    line-height:0%;
+}
+
+section1 p {
+    padding-top: 0%;
+}
+
+section1 form.search-box {
+    width: 100%;
+    display: inline-flex;
+    flex-wrap: nowrap;
+    column-gap: 0;
+    justify-content: flex-start;
+    align-items: center;
+    min-width: 10%;
+    padding: 10px 0;
 }
 
 section1 form.search-box button.location {
-    float: left;
     background-color: #f2f2f2;
     color: #000000;
-    border-radius: 5px 0px 0px 5px;
+    border-radius: 10px 0px 0px 10px;
     cursor: pointer;
     position: static;
     border: none;
     padding: 0 10px;
-    width: 50px;
-    height: 30px;
+    width: 80px;
+    height: 40px;
 }
 
 section1 form.search-box input {
-    float: left;
     position: static;
     border-top: 1px solid #f2f2f2;
     border-bottom: 1px solid #f2f2f2;
     border-left: 0;
     border-right: 0;
     outline: none;
-    width: 150px;
-    height: 28px;
     padding: 0 10px;
+    width: 150px;
+    height: 38px;
 }
 
 section1 form.search-box input.search-txt {
-    font-family: 'ralewayregular';
+    font-family: 'ralewaysemibold';
     font-weight: bold;
     color: #000000;
     opacity: 1.0;
@@ -125,36 +171,35 @@ section1 form.search-box input.search-txt {
 section1 form.search-box button { 
     background-color: #0065fc;
     color: #ffffff;
-    border-radius: 0px 5px 5px 0px;
+    border-radius: 0px 10px 10px 0px;
     cursor: pointer;
     position: static;
     border: none;
     padding: 0 10px;
     width: 100px;
-    height: 30px;
-    font-family: 'ralewayregular';
+    height: 40px;
+    font-family: 'ralewaylight';
 }
 
-
-section1 li.filtre {
-display: inline-block;
-list-style-type: none;
-text-decoration: none;
-line-height: 70px;
-padding: 10 0px;
-font-size: 1.2em;
-color: black;
-font-weight: bold;
+section1 .filtre {
+    font-family : "ralewaysemibold";
+    font-size: 15px;
+    color: #000000;
+    display: inline-flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    align-items: center;
+    place-content: content;
+    padding: 10px 0;;
 }
 
 section1 li.btn {
-    display: inline-block;
-    min-width: 30px;
+    display: inline-flex;
+    flex-wrap: nowrap;
+    min-width: 20px;
     list-style-type: none;
     text-decoration: none;
-    line-height: 70px;
     padding: 0 10px;
-    text-align: left;
     font-size: 1.2em;
     color: black;
 }
@@ -165,31 +210,41 @@ section1 span.icon {
         color: #0065fc;
         padding: 15px;
         justify-content: left;
-        font-weight: bold;
+        position: relative;
+        left: -15px;
+        height: 41px;
+        font-weight: normal;
+
 }
 
 section1 button.filtres {
+    font-family : "ralewaysemibold";
+    font-weight: bold;
     background-color: #ffffff;
     color: #000000;
-    font-family: 'ralewayregular';
-    font-weight: bold;
-    border-radius: 20px 20px 20px 20px;
+    border-radius: 30px 30px 30px 30px;
     cursor: pointer;
     position: static;
-    border: 1px solid #f2f2f2;
-    padding-left: 0;
-    padding-right: 20px;
+    border: 2px solid #f2f2f2;
     width: auto;
-    height: 30px;
-    text-align: center;
+    height: 38px;
 } 
 
+section1 .info {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px 0;
+    align-items: center;
+}
 section1 i.fa-info-circle {
     color: #ffffff; 
-} 
-
+}
 section1 i.fa-circle {
     color: #0065fc;
+}
+#cercle {
+    clip-path: circle(50% at 50% 50%);
+    color:#f2f2f2;
 }
 
 
@@ -201,18 +256,25 @@ footer {
     grid-area: "h3 h3 h3 .";
     font-family: 'ralewayregular';
     background-color: #f2f2f2;
-    justify-content: center;
 }
 
-/*enlever espace entre titre et p*/
 footer h3 {
+    grid-area: "h3";
     grid-row-start: 1;
     grid-column-end: span 1;
+
 }
 
+footer h3 p {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: column;
+    justify-content: space-around; 
+    align-items: left;
+}
 footer p {
     grid-row-start: 2;
-    text-align: left;
     line-height: 2em;
 }
 footer p.one {
