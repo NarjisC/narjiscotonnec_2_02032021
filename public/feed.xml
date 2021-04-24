@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
     <title>P2_02_lienpageweb</title>
-    <link href="https://Narjisc.gitlab.io/NarjisCotonnec_2_02032021/feed.xml" rel="self" />
-    <link href="https://Narjisc.gitlab.io/NarjisCotonnec_2_02032021" />
+    <link href="https://Narjis c.gitlab.io/NarjisCotonnec_2_02032021/feed.xml" rel="self" />
+    <link href="https://Narjis c.gitlab.io/NarjisCotonnec_2_02032021" />
     <updated>1970-01-01T01:00:00+01:00</updated>
     <author>
         <name>Narjis Cotonnec</name>
     </author>
-    <id>https://Narjisc.gitlab.io/NarjisCotonnec_2_02032021</id>
+    <id>https://Narjis c.gitlab.io/NarjisCotonnec_2_02032021</id>
 
 </feed>
