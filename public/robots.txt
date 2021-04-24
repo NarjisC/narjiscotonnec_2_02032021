@@ -1,0 +1,3 @@
+User-agent: *
+Disallow:
+Sitemap: https://Narjisc.gitlab.io/P2_01_lienGitlab/sitemap.xml
