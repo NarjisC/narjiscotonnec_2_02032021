@@ -1,0 +1,525 @@
+@font-face {
+    font-family: 'ralewaysemibold';
+    src: url('../font/raleway-semibold-webfont.woff2') format('woff2'),
+         url('../font/raleway-semibold-webfont.woff') format('woff'),
+         url('../font/Raleway-SemiBold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'ralewaylight';
+    src: url('../font/raleway-light-webfont.woff2') format('woff2'),
+         url('../font/raleway-light-webfont.woff') format('woff'),
+         url('../font/Raleway-Light.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+        font-family: 'ralewaylight';
+        font-size: 1em;
+        color: #000000;
+        background: #ffffff;
+        margin: 5px;
+        overflow-x: hidden;
+}
+@media screen and (max-width: 480px) {
+    body {
+        display: block;  
+        clear: both;
+    }
+}
+@media screen and (max-width: 767px) {
+    body {
+        display: block;  
+        clear: both;
+    }
+}
+
+h1 h2 h3 h4 {
+    font-family: 'ralewaysemibold';
+    color: #000000;
+}
+
+p {
+    color: #000000;
+    font-family: 'ralewaylight';
+}
+
+header {
+    background-color: #fff;
+    display: grid;
+    grid-template-columns: auto 1fr 30ch 15ch;
+    grid-template-areas: "logo . nav inscrire";
+    grid-gap: 0;
+    line-height: 90px;
+    width: 100%;
+    height: 100%;
+}
+@media screen and (max-width: 480px) {
+    header {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: 
+            "logo inscrire"
+            "nav nav";
+        gap: 0;
+        line-height: 50px;
+    }
+}
+@media screen and (max-width: 767px) {
+    header {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: 
+        "logo inscrire"
+        "nav nav";
+        gap: 0px;
+        line-height: 50px;
+    }
+}
+
+header #logo {
+    grid-area: logo;
+    padding-top: 20px;
+    width: 97px;
+    height: 45px;
+    float: left;
+}
+@media screen and (max-width: 480px) {
+    header #logo {
+        grid-area: logo;
+    }
+}
+@media screen and (max-width: 767px) {
+    header #logo {
+        grid-area: logo;
+    }
+}
+
+header nav {
+    width: 300px;
+    height: 100%;
+    grid-area: nav;  
+}
+@media screen and (max-width: 480px) {
+    header nav {
+        grid-area: nav;
+        width: 100%
+    }
+}
+@media screen and (max-width: 767px) {
+    header nav {
+        grid-area: nav;
+        width: 100%
+    }
+}
+
+header nav ul {
+    width: 100%;
+    height: 90px;
+    font-family: 'ralewaylight';
+    grid-area: ul;
+    display: flex;
+    flex-flow: row nowrap;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+}
+
+header nav li.bouton {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@media screen and (max-width: 767px) {
+    header nav li.bouton {
+        border-bottom: 3px solid #f2f2f2;
+        width: 100%;
+    }
+}
+
+header nav li.bouton a {
+    text-decoration: none;
+    text-align: center;
+    color: black;
+    margin-left: -10px;
+    margin-right: -10px;
+}
+@media screen and (min-width: 768px) {
+header nav li.bouton:hover a {
+    color: #0065fc;
+    border-top: 2px solid #0065fc;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-family: 'ralewaysemibold';
+    } 
+}
+@media screen and (max-width: 767px) {
+    header nav li.bouton:hover a { 
+        color: #0065fc;
+        border-bottom: 2px solid #0065fc;
+        width: 50%;
+        padding-left: 25%;
+        padding-right: 25%;
+        font-family: 'ralewaysemibold';
+        padding-bottom: 21px;
+        padding-top: 22px;
+    }
+}
+
+header .blue  {
+    font-family: 'ralewaysemibold';
+    grid-area: inscrire;
+    width: 50%;
+    height: auto;
+    width: 15ch;
+    color: #000000;
+    text-decoration: none;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+@media screen and (max-width: 480px) {
+    header .blue {
+        padding-top: 15px;
+        grid-area: inscrire;
+        justify-content: right;
+        margin-right: 0%;
+        padding-right: 0%;
+    }
+}
+@media screen and (max-width: 767px) {
+    header .blue {
+        width: 30ch;
+        padding-top: 15px;
+        grid-area: inscrire;
+        justify-content: right;
+        margin-right: 0%;
+        padding-right: 0%;
+    }
+}
+
+header .blue a {
+    text-decoration: none;
+    color: #0065fc;
+}
+
+main {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding-top: 30px;
+    background: #ffffff;
+}
+
+main h1 {
+    font-family : "ralewaysemibold";
+    font-size: 25px;
+    font-weight: bolder;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+main p {
+    line-height: 0;
+}
+
+main form.search-box {
+    width: 100%;
+    display: inline-flex;
+    flex-wrap: nowrap;
+    column-gap: 0;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 10px 0;
+}
+
+main form.search-box button.location {
+    background-color: #f2f2f2;
+    color: #000000;
+    border-radius: 3mm 0 0 3mm;
+    cursor: pointer;
+    position: static;
+    border: none;
+    padding: 0 10px;
+    width: 50px;
+    height: 50px;
+    font-size: 15px;
+}
+
+main form.search-box input {
+    position: static;
+    border-top: 1px solid #f2f2f2;
+    border-bottom: 1px solid #f2f2f2;
+    border-left: 0;
+    border-right: 0;
+    outline: none;
+    padding: 0 10px;
+    width: 200px;
+    height: 48px;
+    font-family: 'ralewaysemibold';
+    font-size: 15px;
+}
+
+main form.search-box input.search-txt {
+    font-family: 'ralewaysemibold';
+    font-size: 15px;
+    font-weight: bold;
+    color: #000000;
+    opacity: 1.0;
+}
+
+@media screen and (min-width: 768px) {
+    main form.search-box button.search { 
+        background-color: #0065fc;
+        color: #ffffff;
+        border-radius: 0 3mm 3mm 0;
+        cursor: pointer;
+        position: static;
+        border: none;
+        padding: 0 10px;
+        width: 100px;
+        height: 50px;
+        font-family: 'ralewaylight';
+        font-size: 15px;
+    }
+}
+@media screen and (max-width: 767px) {
+    main form.search-box button.search { 
+        display: none;
+    }
+}
+@media screen and (max-width: 767px) {
+    main form.search-box i.fa-search {
+        background-color: #0065fc;
+        color: #ffffff;
+        border-radius: 0 3mm 3mm 0;
+        cursor: pointer;
+        position: static;
+        border: none;
+        padding: 0 10px;
+        width: 50px;
+        height: 50px;
+        font-size: 15px;
+        text-align: center;
+        line-height: 50px;
+    }
+}
+@media screen and (min-width: 768px) {
+    main form.search-box i.fa-search { 
+        display: none;
+    }
+}
+
+main .filtre {
+    font-family : "ralewaysemibold";
+    font-size: 15px;
+    color: #000000;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+main .filtre ul {
+    padding-left: 0%;
+}
+@media screen and (max-width: 480px) {
+    main .filtre ul {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        row-gap: 10px;
+        justify-content: left;
+    }
+}
+@media screen and (max-width: 767px) {
+    main .filtre ul {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        row-gap: 10px;
+    }
+}
+@media screen and (min-width: 768px) and (max-width: 959px) {
+    main .filtre ul {
+      display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        row-gap: 10px;
+    }
+}
+
+main .filtre h3 {
+    text-align: left;
+    margin-right: 10px;
+}
+
+main li.btn {
+    display: inline-flex;
+    flex-wrap: nowrap;
+    list-style-type: none;
+    text-decoration: none;
+    padding: 0 10px;
+    font-size: 15px;
+    color: black;
+    position: relative;
+}
+
+main span.icon {
+    clip-path: circle(40% at 50% 50%);
+    background-color: #deebff;
+    color: #0065fc;
+    padding: 21px;
+    justify-content: left;
+    position: absolute;
+    left: 5px;
+    top: -6px;
+    animation: rotation 8s infinite linear;
+}
+@keyframes rotation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(359deg);
+    }
+  }
+
+main button.filtres {
+    font-family: 'ralewaylight';
+    font-size: 15px;
+    font-weight: bold;
+    background-color: #ffffff;
+    color: #000000;
+    border-radius: 30px 30px 30px 30px;
+    cursor: pointer;
+    position: static;
+    border: 2px solid #f2f2f2;
+    width: auto;
+    height: 48px;
+    padding-left: 60px;
+    padding-right: 30px;
+} 
+main button.filtres:hover {
+    background-color: #deebff;
+    color: #0065fc;
+    transition: 1s;
+}
+
+main .info {
+    display: inline-flex;
+    flex-flow: row wrap;
+    align-items: center;
+}
+@media screen and (max-width: 767px) {
+    main .info {
+        display: grid;
+        grid-template-columns: 40px auto;
+    }
+    main i.fa-info-circle {
+        grid-column: 1 / 2;
+    }
+    main i.fa-circle {
+        grid-column: 1 / 2;
+    }
+    main .info p {
+        grid-column: 2 / 2;
+    }
+}
+
+main i.fa-info-circle {
+    color: #ffffff; 
+    text-align: left;
+    font-size: 30px;
+}
+main i.fa-circle {
+    color: #0065fc;
+    text-align: left;
+    font-size: 30px;
+}
+
+main .info h4 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    font-family: 'ralewaylight';
+    font-weight: lighter;
+}
+
+footer {
+    width: 100%;
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr auto;
+    background-color: #f2f2f2;
+    padding: 20px 20px;
+}
+@media screen and (max-width: 480px) {
+    footer {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        row-gap: 30px;
+    }
+}
+@media screen and (max-width: 767px) {
+    footer {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        row-gap: 30px;
+    }
+}
+
+footer h3 {
+    line-height: 0%;
+    font-family : "ralewaysemibold";
+}
+
+footer ul {
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    margin: 0;
+    line-height: 40px;
+}
+
+footer li {
+    list-style-type: none;
+    text-decoration: none;
+    color: #000000;
+}
+
+footer li a {
+    text-decoration: none;
+    color: #000000;
+}
+
+footer a {
+    text-decoration: none;
+    color: #000000;
+}
+
+footer li:hover a {
+    color: #0065fc;
+} 
+
+
+   
+
+  
+
+
